@@ -617,8 +617,6 @@ async function startServer() {
 }
 
 // Iniciar servidor se este arquivo for executado diretamente
-if (import.meta.url === `file://${process.argv[1]}`) {
-  startServer()
-}
+startServer()
 
 export default app
