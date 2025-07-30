@@ -109,6 +109,10 @@ app.get('/health', async (req, res) => {
   })
 })
 
+app.get('/ping', (req, res) => {
+  res.json({ status: 'ok', timestamp: new Date() })
+})
+
 /**
  * Debug endpoints
  */
